@@ -1,0 +1,20 @@
+@import url("/TP1/style.css");
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-video{
+
+    width: 80vw;
+}
+
+.descripcion {
+   max-width: 80%;
+    top: 0px;
+}
