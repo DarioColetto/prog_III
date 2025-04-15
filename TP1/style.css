@@ -10,6 +10,7 @@ body{
     align-content: start;
     height: 100vh;
     font-family: "Roboto", sans-serif;
+    color: azure;
 }
 
 header, footer {
@@ -33,7 +34,7 @@ header {
 }
 
 main {
-    background: green;
+    background: rgb(27, 27, 27);
 }
 
 footer{
