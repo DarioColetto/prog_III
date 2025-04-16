@@ -5,50 +5,44 @@ main{
   height: 150vh
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 2%;
-  flex-wrap: wrap;
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1% 1%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one one two two two three three three"
+    "four four four five five five six six"
+    "sev sev eigth eigth eigth nine nine nine";
 }
 
-.item{
-  background: plum;
+.container > *{
+  background: palegreen;
   overflow: hidden;
-position: relative;
-
-
 }
 
-.item:nth-child(1),
-.item:nth-child(5),
-.item:nth-child(7) {
-  height: 32%;
-  width: 40%;
-}
+.one { grid-area: one; }
 
-.item:nth-child(2),
-.item:nth-child(8) {
-  height: 32%;
-  width: 30%;
-}
+.two { grid-area: two; }
 
-.item:nth-child(3),
-.item:nth-child(6),
-.item:nth-child(9) {
-  height: 32%;
-  flex-grow: 1;
-}
+.three { grid-area: three; }
 
-.item:nth-child(4) {
-  height: 32%;
-  width: 25%;
-}
+.four { grid-area: four; }
+
+.five { grid-area: five; }
+
+.six { grid-area: six; }
+
+.sev { grid-area: sev; }
+
+.eigth { grid-area: eigth; }
+
+.nine { grid-area: nine; }
+
+      
 
   img{
-    width: auto;
     height: 100%;
-    position: absolute;
-    right: 0%;
-    margin: auto;
+    
+
   }
