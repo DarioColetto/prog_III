@@ -2,7 +2,7 @@
 
 
 main{
-  height: 150vh
+  height: calc(100vw*1.2)
 }
 
 .container {  display: grid;
@@ -17,8 +17,8 @@ main{
 }
 
 .container > *{
-  background: palegreen;
   overflow: hidden;
+  position: relative;
 }
 
 .one { grid-area: one; }
@@ -43,6 +43,7 @@ main{
 
   img{
     height: 100%;
-    
+    width: 100%;
+    object-fit: cover;
 
   }
