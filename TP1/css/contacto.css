@@ -1,0 +1,29 @@
+@import url("/TP1/style.css");
+
+main{
+    height: fit-content;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px
+  }
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  input, textarea, select {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 1em;
+  }
+  .botones {
+    margin-top: 20px;
+  }
+  .botones input {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-right: 10px;
+  }
