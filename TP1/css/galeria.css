@@ -1,11 +1,11 @@
 @import url("/TP1/style.css");
 
-
-main{
-  height: calc(100vw*1.2)
+main {
+  height: calc(100vw * 1.2);
 }
 
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1% 1%;
@@ -16,34 +16,65 @@ main{
     "sev sev eigth eigth eigth nine nine nine";
 }
 
-.container > *{
+.container > * {
   overflow: hidden;
   position: relative;
+  transition: opacity 0.6s ease;
 }
 
-.one { grid-area: one; }
+.one {
+  grid-area: one;
+}
 
-.two { grid-area: two; }
+.two {
+  grid-area: two;
+}
 
-.three { grid-area: three; }
+.three {
+  grid-area: three;
+}
 
-.four { grid-area: four; }
+.four {
+  grid-area: four;
+}
 
-.five { grid-area: five; }
+.five {
+  grid-area: five;
+}
 
-.six { grid-area: six; }
+.six {
+  grid-area: six;
+}
 
-.sev { grid-area: sev; }
+.sev {
+  grid-area: sev;
+}
 
-.eigth { grid-area: eigth; }
+.eigth {
+  grid-area: eigth;
+}
 
-.nine { grid-area: nine; }
+.nine {
+  grid-area: nine;
+}
 
-      
+.container:hover > :not(:hover) {
+  opacity: 0.4;
+}
 
-  img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
   }
+
+  main {
+    height: fit-content;
+  }
+}
