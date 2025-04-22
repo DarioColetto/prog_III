@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 2</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Ejercicio 1</h2>
+        <h1 id="tituloPrincipal">Titulo Principal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus labore neque aperiam. Quod ratione
+            dolorum incidunt facilis iste voluptate quae nulla. Nam animi eligendi alias! Sint similique porro molestiae
+            quae.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsam ea, aliquid cupiditate esse porro
+            soluta distinctio illo maxime quas tenetur doloribus iure dolores aspernatur sequi quod! Sequi, sed
+            praesentium.</p>
+        <div id="container">
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+
+
+        <h2>Ejercicio 2</h2>
+        <input type="text" id="inputTexto" placeholder="Agregar">
+        <button id="btnAgregar" onclick="agregarElemento()">Agregar</button>
+        <button id="btnEliminar" onclick="eliminarElemento()">Eliminar</button>
+        <h3>Lista de elementos</h3>
+        <ul id="lista"></ul>
+    </section>
+    <section>
+        <h2>Ejercicio 3</h2>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id quas est quae ipsam natus
+            reiciendis sunt vel eveniet, aspernatur cum atque quidem voluptatibus voluptatum maiores nemo sapiente.
+            Tempore, obcaecati.</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id quas est quae ipsam natus
+            reiciendis sunt vel eveniet, aspernatur cum atque quidem voluptatibus voluptatum maiores nemo sapiente.
+            Tempore, obcaecati.</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam id quas est quae ipsam natus
+            reiciendis sunt vel eveniet, aspernatur cum atque quidem voluptatibus voluptatum maiores nemo sapiente.
+            Tempore, obcaecati.</p>
+        <button onclick="resaltar()">Resaltar</button>
+        <button onclick="ocultar()">Ocultar</button>
+    </section>
+    <section>
+
+
+        <h2>Ejercicio 4</h2>
+
+        <form id="taskForm" onsubmit="addTask(event)">
+            <input type="text" id="taskInput" placeholder="Nueva tarea" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul id="taskList"></ul>
+    </section>
+    <section>
+        <h2>Ejercicio 5</h5>
+            <form id="userForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" >
+                
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                <br>
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" >
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+
+    </section>
+</body>
+
+</html>
